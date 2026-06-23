@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --void: #0a0b0d;
+  --carbon: #141619;
+  --graphite: #1f2226;
+  --ash: #9aa3ad;
+  --bone: #e6e8eb;
+  --trace: #3dd8c0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Thin scrollbars that match the surface palette. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--graphite) transparent;
+}
+
+::selection {
+  background: rgba(61, 216, 192, 0.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,29 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# next
+/.next/
+/out/
+next-env.d.ts
+
+# testing
+/coverage
+/playwright-report
+/test-results
+/blob-report
+/.playwright
+
+# env
+.env
+.env.*
+!.env.example
+
+# session history (never ship)
+/.remember
+
+# misc
+*.tsbuildinfo
+.DS_Store
+*.log
